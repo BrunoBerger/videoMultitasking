@@ -6,7 +6,7 @@
     text-align: center;
   }
   
-  .divHeaders {
+.divHeaders {
     padding: 8px;
     cursor: move;
     z-index: 10;

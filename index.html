@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>Video Multitasker</title>
     
-    <h2>Paste your link here</h2>
+    <h2>Youtube Multitasker</h2>
 
-    <input id="linkField" type="text" onpaste="addNewVid()" placeholder="button?">
+    <input id="linkField" type="text" contenteditable='true'
+        placeholder="Paste Link Here">
 </head>
 
 <body>
- 
+    
     <!-- Draggable DIV -->
     <!-- <div class="divs", id="testDiv"> -->
         <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
@@ -26,6 +27,7 @@
 
     <script type="text/javascript" src="dragable.js"></script>
     <script type="text/javascript" src="videos.js"></script>
+    <script type="text/javascript" src="pasteHandler.js"></script>
     <link rel="stylesheet" href="style.css">
 </body>
 
