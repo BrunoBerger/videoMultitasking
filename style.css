@@ -1,4 +1,4 @@
-#mydiv {
+.divs {
     position: absolute;
     z-index: 9;
     background-color: #f1f1f1;
@@ -6,7 +6,7 @@
     text-align: center;
   }
   
-  #mydivheader {
+  .divHeaders {
     padding: 8px;
     cursor: move;
     z-index: 10;

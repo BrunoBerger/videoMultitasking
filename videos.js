@@ -10,23 +10,27 @@ function addButton(){
 function addNewVid() {
     vidCounter++;
 
-    var div = document.createElement("div")
+    // TODO:check e.className for class assignement
+    var newDiv = document.createElement("div")
+    newDiv.setAttribute("class", "divs");
 
     var divHeader = document.createElement("div")
+    divHeader.setAttribute("class", "divHeaders");
     divHeader.setAttribute("id", "newdivheader");
     divHeader.innerText = "Im a new header";
-    div.appendChild(divHeader);
+    newDiv.appendChild(divHeader);
 
     var ifrm = document.createElement('iframe');
+    ifrm.setAttribute("class", "iframes");
     ifrm.setAttribute('id', 'ifrm');
     ifrm.setAttribute('src', 'https://www.youtube.com/embed/Sagg08DrO5U');
     ifrm.setAttribute("frameborder", "0");
     ifrm.style.width = "560";
     ifrm.style.height = "315";
-    div.appendChild(ifrm);   
+    newDiv.appendChild(ifrm);   
     
     
-    document.body.appendChild(ifrm);
-
+    document.body.appendChild(newDiv);
+    dragElement(newDiv);
 
   }

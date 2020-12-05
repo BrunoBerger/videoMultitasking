@@ -3,30 +3,30 @@
 <head>
     <meta charset="utf-8">
     <title>Video Multitasker</title>
-    <link rel="stylesheet" href="style.css">
     
     <h2>Paste your link here</h2>
 
-    <input id="linkField2" type="text" onpaste="addNewVid()" placeholder="button?">
+    <input id="linkField" type="text" onpaste="addNewVid()" placeholder="button?">
 </head>
 
 <body>
  
     <!-- Draggable DIV -->
-    <div id="mydiv">
+    <!-- <div class="divs", id="testDiv"> -->
         <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-        <div id="mydivheader">Click here to move</div>
-        <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/Sagg08DrO5U" 
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-    </div>
+        <!-- <div class="divHeaders", id="mydivheader">Click here to move</div> -->
+        <!-- <iframe width="560" height="315"  -->
+            <!-- src="https://www.youtube.com/embed/Sagg08DrO5U"  -->
+            <!-- frameborder="0" -->
+            <!-- allow="accelerometer; autoplay; clipboard-write;  -->
+                <!-- encrypted-media; gyroscope; picture-in-picture" -->
+            <!-- allowfullscreen> -->
+        <!-- </iframe> -->
+    <!-- </div> -->
 
     <script type="text/javascript" src="dragable.js"></script>
     <script type="text/javascript" src="videos.js"></script>
+    <link rel="stylesheet" href="style.css">
 </body>
 
 </html>
