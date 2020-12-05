@@ -1,21 +1,6 @@
 // Make the DIV element draggable:
 dragElement(document.getElementById("mydiv"));
 
-
-function addNewVid() {
-  var newDiv = document.createElement("div")
-
-  var divHeader = document.createElement("div")
-  divHeader.innerHTML("Hello there")
-  newDiv.appendChild(divHeader)
-
-  var newIFrame = document.createElement("iframe")
-  newDiv.appendChild(newIFrame)
-  dragElement(newDiv)
-
-  document.body.insertAdjacentElement(newDiv)
-}
-
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
